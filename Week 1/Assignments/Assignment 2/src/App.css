@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto;
+  flex: 1;
+}
+
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.custom-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.custom-button:hover {
+  background: #1d4ed8;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  );
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin-bottom: 12px;
+  color: #475569;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
