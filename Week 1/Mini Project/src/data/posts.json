@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React",
+    "category": "React",
+    "author": "Niloy Pal",
+    "date": "2026-11-10",
+    "readTime": "5 min read",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=900&q=80",
+    "excerpt": "Learn the fundamentals of React, components, JSX, props, and how to build your first interactive UI."
+  },
+  {
+    "id": 2,
+    "title": "Understanding JavaScript Closures",
+    "category": "JavaScript",
+    "author": "Rahul Das",
+    "date": "2026-11-12",
+    "readTime": "7 min read",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=900&q=80",
+    "excerpt": "Explore closures in JavaScript and understand how functions remember variables from their surrounding scope."
+  },
+  {
+    "id": 3,
+    "title": "CSS Grid vs Flexbox",
+    "category": "CSS",
+    "author": "Priya Sen",
+    "date": "2026-11-08",
+    "readTime": "4 min read",
+    "image": "https://unsplash.com/photos/programming-language-6JVlSdgMacE",
+    "excerpt": "A practical guide to choosing between CSS Grid and Flexbox for modern responsive web layouts."
+  },
+  {
+    "id": 4,
+    "title": "React Hooks Explained",
+    "category": "React",
+    "author": "Niloy Pal",
+    "date": "2026-11-14",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "excerpt": "Understand useState and useEffect and discover how Hooks make React functional components powerful."
+  },
+  {
+    "id": 5,
+    "title": "Building Your First Portfolio",
+    "category": "Career",
+    "author": "Aman Roy",
+    "date": "2026-11-09",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=80",
+    "excerpt": "Learn how to create a portfolio that showcases your projects, skills, and personality to recruiters."
+  },
+  {
+    "id": 6,
+    "title": "JavaScript Array Methods You Should Know",
+    "category": "JavaScript",
+    "author": "Rahul Das",
+    "date": "2026-11-15",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "excerpt": "Master map, filter, reduce, find, and other useful methods for manipulating JavaScript arrays."
+  }
+]
