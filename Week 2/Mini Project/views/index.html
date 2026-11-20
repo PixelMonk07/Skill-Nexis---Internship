@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notely | Your Personal Notes</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- AUTHENTICATION SECTION -->
+    <section id="auth-section" class="auth-section">
+
+        <div class="auth-card">
+
+            <div class="brand">
+                <span class="brand-icon">N</span>
+                <span>notely.</span>
+            </div>
+
+            <h1 id="auth-title">Welcome back.</h1>
+
+            <p class="auth-description" id="auth-description">
+                Pick up where you left off.
+            </p>
+
+            <form id="auth-form">
+
+                <div id="name-field" class="form-group hidden">
+                    <label for="auth-name">Full name</label>
+                    <input
+                        type="text"
+                        id="auth-name"
+                        placeholder="Your name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="auth-email">Email address</label>
+                    <input
+                        type="email"
+                        id="auth-email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="auth-password">Password</label>
+                    <input
+                        type="password"
+                        id="auth-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="primary-btn auth-submit">
+                    Sign in
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                <span id="auth-switch-text">Don't have an account?</span>
+                <button type="button" id="auth-toggle">Create account</button>
+            </p>
+
+            <p id="auth-message" class="message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN APPLICATION -->
+    <div id="app-section" class="app-layout hidden">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <span class="brand-icon">N</span>
+                <span>notely.</span>
+            </div>
+
+            <div class="sidebar-menu">
+
+                <p class="menu-label">WORKSPACE</p>
+
+                <button class="nav-item active" id="all-notes-btn">
+                    <span>▤</span>
+                    All Notes
+                </button>
+
+                <button class="nav-item" id="pinned-notes-btn">
+                    <span>☆</span>
+                    Pinned
+                </button>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="user-profile">
+                    <div class="avatar" id="user-avatar">N</div>
+
+                    <div class="user-details">
+                        <strong id="user-name">User</strong>
+                        <span id="user-email">user@example.com</span>
+                    </div>
+                </div>
+
+                <button id="logout-btn" class="logout-btn">
+                    ↪ Log out
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+                    <h1 id="page-title">All Notes</h1>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input
+                            type="search"
+                            id="search-input"
+                            placeholder="Search your notes..."
+                        >
+                    </div>
+
+                    <button id="add-note-btn" class="primary-btn">
+                        + New Note
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- NOTES INFORMATION -->
+            <section class="notes-section">
+
+                <div class="notes-heading">
+                    <div>
+                        <h2>Your thoughts, organized.</h2>
+                        <p id="notes-count">0 notes</p>
+                    </div>
+                </div>
+
+                <!-- NOTES WILL BE INSERTED HERE -->
+                <div id="notes-container" class="notes-grid"></div>
+
+                <!-- EMPTY STATE -->
+                <div id="empty-state" class="empty-state hidden">
+                    <div class="empty-icon">✎</div>
+                    <h3>No notes found</h3>
+                    <p>Create your first note or try a different search.</p>
+
+                    <button id="empty-add-btn" class="primary-btn">
+                        + Create your first note
+                    </button>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- CREATE / EDIT NOTE MODAL -->
+    <div id="note-modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 id="modal-title">Create a note</h2>
+
+                <button type="button" id="close-modal" class="close-btn">
+                    &times;
+                </button>
+            </div>
+
+            <form id="note-form">
+
+                <input
+                    type="text"
+                    id="note-title"
+                    placeholder="Give your note a title..."
+                    maxlength="100"
+                    required
+                >
+
+                <textarea
+                    id="note-content"
+                    placeholder="Start writing your thoughts..."
+                    required
+                ></textarea>
+
+                <div class="modal-footer">
+
+                    <span id="note-date">Your thoughts matter.</span>
+
+                    <div>
+                        <button type="button" id="cancel-note" class="secondary-btn">
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="primary-btn">
+                            Save Note
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/app.js" defer></script>
+
+</body>
+</html>

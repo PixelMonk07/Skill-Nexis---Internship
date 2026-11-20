@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "51ceaadb-4d7c-487c-b460-410e9de5f42d",
+      "name": "Test User",
+      "email": "copilot-check@example.com",
+      "password": "$2b$10$cmzhmSKrfpGfXrvNQGV5oexoWQev9gNFgCqPpMT7RzXjHBwN.GuLa"
+    },
+    {
+      "id": "2c1d5294-5811-41ad-9c08-f9c8518f2dfb",
+      "name": "Niloy Pal",
+      "email": "hello123@gmail.com",
+      "password": "$2b$10$cB02NxcPvPDRvBOdhYkIDu4RA5vgdpmDpkWGaHLL0751EjedP.cXS"
+    }
+  ],
+  "notes": [
+    {
+      "id": "2e58b7c9-f407-4d90-8f55-794657177bf9",
+      "userId": "2c1d5294-5811-41ad-9c08-f9c8518f2dfb",
+      "title": "1st Note",
+      "content": "this is a first note",
+      "createdAt": "2026-11-20T10:08:05.481Z",
+      "updatedAt": "2026-11-20T10:08:05.481Z"
+    }
+  ]
+}
